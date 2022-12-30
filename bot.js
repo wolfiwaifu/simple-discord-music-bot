@@ -1,5 +1,7 @@
 const Discord = require('discord.js');
-const client = new Discord.Client();
+const client = new Discord.Client({
+  intents: Discord.Intents.NON_PRIVILEGED
+});
 const ytdl = require('ytdl-core');
 
 let dispatcher;
